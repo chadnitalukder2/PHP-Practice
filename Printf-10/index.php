@@ -26,17 +26,25 @@ echo $html_block;*/
 printf($html_block, ucwords($first_name ), ucwords($last_name))
 */
 /*========================================================*/
-//intejar = d
+//intejar decimal = d
 //flort = f
 //string = s
-//bolian = b
-//asci valu = c  means a=97, b= 98, A=65
+//bainary = b
+//octal = o
+//hexa= x
+//asci value = c  means a=97, b= 98, A=65
 //==========================================================
 /*$amount = 65;
 printf ("Hello %c" ,$amount );*/
 
+/*$test = 10;
+$test2 = 20;
+$amount = 100;
 
-
+printf("Amount : %2\$d, Another Amount is: %d",$test,$test2 );
+printf('Amount : %2$d, Another Amount is: %1$d',$test,$test2 );
+printf('Amount : %1$d, Another Amount is: %1$d',$amount );
+*/
 
 
 ?>
