@@ -46,6 +46,21 @@ printf('Amount : %2$d, Another Amount is: %1$d',$test,$test2 );
 printf('Amount : %1$d, Another Amount is: %1$d',$amount );
 */
 
+/*$amount = 10.2532;
+printf("Your amount is : %f ",$amount );
+printf("Your amount is : %.2f ",$amount );*/
+
+/*$name ="Chadni";
+printf("[%010s]",$name); //length right aling
+echo"<br>";
+printf("[%'*-10s]",$name); // left aling -*/
+
+/*$name ="Nitesh das";
+printf("[%'#10.5s]", $name);
+printf("[%-'*10.5s]", $name);*/
+
+
+
 
 ?>
 
