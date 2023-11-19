@@ -1,7 +1,7 @@
 <?php
 
-$username = "abcd";
-$password = "12345";
+//$username = "abcd";
+//$password = "12345";
 
 /*if($username == 'abcde' && $password == 12345){
 echo "hello user";
@@ -10,9 +10,9 @@ else{
     echo "Invalid username / password";
 }*/
 
-// Nested
+// Nested=========================================================
 
-if($username == 'abcd'){
+/*if($username == 'abcd'){
     if($password == 12045){
         echo "Hello user";
     }
@@ -22,6 +22,10 @@ if($username == 'abcd'){
 }
 else{
     echo "Invalid Username";
-}
+}*/
+
+
+
+
 
 ?>
