@@ -9,8 +9,14 @@
     echo "Bye";
 <?php endif; */  ?>
 
+<!-- ========For===== -->
+<?php for ($count = 1; $count <= 10; $count++): ?>
+    <h1>Hello <?php echo $count ?> </h1>
+ <?php endfor; ?>
 
-<!-- ============================================ -->
+
+
+<!-- ====================if======================== -->
 <?php
 /*if (false):
     echo "Hello";
@@ -25,7 +31,7 @@ endif;*/
 
 <!-- ==================switch==================== -->
 <?php
-switch(2):
+/*switch(2):
     case 1:
         echo "hello-1";
         break;
@@ -34,7 +40,7 @@ switch(2):
         break;
     default:
         echo "Bye";
- endswitch;
+ endswitch;*/
 
 ?>
 
