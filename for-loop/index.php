@@ -14,40 +14,40 @@
             <?php
                 }*/
             ?>
-<!-- 
-            <li>list 1
-            <ul>
-                    <li>Inner 1</li>
-                    <li>Inner 2</li>
-            </ul>
-            </li>
-            <li>list 2
-             <ul>
-                    <li>Inner 1</li>
-                    <li>Inner 2</li>
-            </ul>
-            </li>
-            <li>list 3
-            <ul>
-                    <li>Inner 1</li>
-                    <li>Inner 2</li>
-            </ul>
-            </li> -->
 
+</ul>
+<!-- ============================================================================ -->
+             <ul>
+             <?php
+            for($user_count = 1; $user_count <= 3; $user_count++ ){
+               ?>
+            <li> user <?php echo $user_count ?>
+        <ul>
+        <?php
+            for($inner_count = 1; $inner_count <= 2; $inner_count++ ){
+               ?>
+            <li> user <?php echo $inner_count ?>
+            <?php
+            }
+           ?>
+            </ul>
+        </li>
+          <?php
+            }
+           ?>
+
+   
 
 
 </ul>
 </body>
 </html>
 
-
-
 <?php
-for($outer_list = 1; $outer_list <= 3; $outer_list++){
+/*for($outer_list = 1; $outer_list <= 3; $outer_list++){
     echo "List $outer_list <br>";
     for($inner_list = 1; $inner_list<= 2; $inner_list++){
         echo ".............Inner List $inner_list <br>";
     }
-}
-
+}*/
 ?>
