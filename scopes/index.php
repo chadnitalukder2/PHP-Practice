@@ -13,7 +13,7 @@ sum();*/
 <!-- =================Global scope=============================== -->
 
 <?php
-$test_var = "Test";
+/*$test_var = "Test";
 function my_name(){
     global $test_var;
     global $my_name;
@@ -21,7 +21,7 @@ $my_name = "Puja";
 echo $test_var;
 }
 my_name();
-echo $my_name;
+echo $my_name;*/
 ?>
 
 <!-- =================Parameter scope=============================== -->
@@ -33,5 +33,15 @@ echo $my_name;
 <!-- =================Static scope=============================== -->
 
 <?php
+
+function order_count(){
+    static $count = 0;
+    $count++;
+    echo $count ."<br>";
+
+ }
+ order_count();
+ order_count();
+ order_count();
 
 ?>
