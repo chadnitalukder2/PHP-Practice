@@ -41,7 +41,7 @@ else{
 $conn->close();*/
 #================Create Table end===================
 #================Insert data star===================
-$sql = "INSERT INTO Student(firstname,lastname,email)
+/*$sql = "INSERT INTO Student(firstname,lastname,email)
 VALUE('Chadni','Talukder','puja@gmail.com')" ;
 
 if(mysqli_query($conn, $sql) == TRUE){
@@ -49,7 +49,12 @@ if(mysqli_query($conn, $sql) == TRUE){
 }
 else{
     echo "data not insert".$conn->error;
-}
+}*/
+#================Insert data end===================
+#================ data Show website start===================
+
+
+
 
 ?>
 
