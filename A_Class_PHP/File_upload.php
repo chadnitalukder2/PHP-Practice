@@ -12,18 +12,19 @@ if(isset($_POST['submit'])){
     $uploadOk = 1;
     $imageFileType = strtolower (pathinfo($filename,PATHINFO_EXTENSION));
  
- $check = getimagesize($tmpname);
-//print_r($check);
-
+    $check = getimagesize($tmpname);
+    //print_r($check);
+    // echo $check['mime'];
 
     if($check !== false){
         echo "file is an image-".$check['mime'];
         $uploadOk = 1;
-    }else{
+    }
+    else{
       $uploadOk = 0;
     }
 
-    if(file_exists( $uploac )){
+    if(file_exists($uploac)){
         echo "File already exists.";
         $uploadOk = 0;
     }
