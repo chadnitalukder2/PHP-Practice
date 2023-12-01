@@ -75,15 +75,15 @@ if($result->num_rows > 0){
         $id        =  $row['id'];
         $firstname =  $row['firstname'];
         $lastname  =    $row['lastname'];
-        $email     =    $row['email']."<br>";
+        $email     =    $row['email'];
 
-        echo "
+echo "
         <tr> 
-        <td>$id<td>
-        <td>$firstname<td>
-        <td>$lastname<td>
-        <td>$email<td>
-        </tr>";
+        <td>$id</td>
+        <td>$firstname</td>
+        <td>$lastname</td>
+        <td>$email</td>
+        </tr>";        
   }
 
   echo"</table>";
