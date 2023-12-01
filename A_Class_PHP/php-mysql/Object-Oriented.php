@@ -57,17 +57,36 @@ else{
 #================Insert data end===================
 #================ data Show website start===================
 
-$sql = "SELECT firstname, lastname, email
+$sql = "SELECT *
         FROM Student";
 
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){
+    echo "<table>
+    <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+    </tr>";
   while( $row = $result->fetch_assoc()){
-    echo  $row['firstname'].' '.$row['lastname'].' '.$row['email']."<br>";
+
+        $id        =  $row['id'];
+        $firstname =  $row['firstname'];
+        $lastname  =    $row['lastname'];
+        $email     =    $row['email']."<br>";
+
+        echo "
+        <tr> 
+        <td>$id<td>
+        <td>$firstname<td>
+        <td>$lastname<td>
+        <td>$email<td>
+        </tr>";
   }
 
-  
+  echo"</table>";
  
 }
 else{
@@ -75,3 +94,18 @@ else{
 }
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<style>
+    table, th, td {
+         border: 1px solid;
+    }
+    </style>
+<body>
+    
+</body>
+</html>
