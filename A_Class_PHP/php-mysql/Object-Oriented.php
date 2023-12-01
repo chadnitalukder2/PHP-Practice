@@ -10,7 +10,7 @@ if($conn->connect_error){
     die('connection failed:'.$conn->connect_error);
 }
 else{
-    echo 'Connected Successfully';
+    echo 'Connected Successfully'.'<br><br>';
 }
 
 
@@ -57,8 +57,21 @@ else{
 #================Insert data end===================
 #================ data Show website start===================
 
+$sql = "SELECT firstname, lastname, email
+        FROM Student";
 
+$result = $conn->query($sql);
 
+if($result->num_rows > 0){
+  while( $row = $result->fetch_assoc()){
+    echo  $row['firstname'].' '.$row['lastname'].' '.$row['email']."<br>";
+  }
 
+  
+ 
+}
+else{
+    echo "No result found";
+}
 
 ?>

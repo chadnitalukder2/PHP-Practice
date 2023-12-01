@@ -9,7 +9,7 @@ $conn =  mysqli_connect($hostname, $username, $password, $dbname);
 if(!$conn){
     die('connection failed:'.mysqli_connect_error());
 }
-    echo 'Connected Successfully';
+    echo 'Connected Successfully'.'<br><br>' ;
 
  #================Create Database start===================
 
@@ -54,8 +54,27 @@ else{
 #================ data Show website start===================
 
 
+$sql = "SELECT firstname, lastname, email
+        FROM Student";
+
+$result = mysqli_query($conn,$sql);
+
+if(mysqli_num_rows($result) > 0){
+    while( $row = mysqli_fetch_assoc($result)){
+          echo  $row['firstname'].' '.$row['lastname'].' '.$row['email']."<br>";
+    }
+}
+else{
+    echo "No result found";
+}
 
 
+
+
+
+
+
+mysqli_close($conn);
 ?>
 
 
