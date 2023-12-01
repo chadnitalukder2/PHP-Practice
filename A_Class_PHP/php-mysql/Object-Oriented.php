@@ -57,7 +57,7 @@ else{
 #================Insert data end===================
 #================ data Show website start===================
 
-$sql = "SELECT *
+/*$sql = "SELECT *
         FROM Student";
 
 $result = $conn->query($sql);
@@ -91,8 +91,30 @@ echo "
 }
 else{
     echo "No result found";
+}*/
+#================ data Show website end===================
+#================ data Update start===================
+/*$sql = "UPDATE Student
+        SET firstname = 'Chad', lastname = 'Talukder', email = 'chad@gmail.com'
+        WHERE id = 2";
+if($conn->query($sql) == TRUE){
+    echo "Update Succesfully";
 }
-
+ else{
+    echo "Not Update";
+ }*/
+#================ data Update   end===================
+#================ data   Ddelete  start===================
+$sql = "DELETE FROM Student
+        WHERE id=3";
+ if($conn->query($sql) == TRUE){
+            echo "Delete Succesfully";
+}
+ else{
+            echo "Not Delete";
+    }
+#================  Ddelete  end===================
+$conn->close();
 ?>
 
 <!DOCTYPE html>

@@ -53,8 +53,7 @@ else{
 #================Insert data end===================
 #================ data Show website start===================
 
-
-$sql = "SELECT *
+/*$sql = "SELECT *
         FROM Student
         ORDER BY firstname ";
 
@@ -89,13 +88,32 @@ if(mysqli_num_rows($result) > 0){
 }
 else{
     echo "No result found";
+}*/
+#================ data Show website end===================
+#================ data Update  start===================
+
+/*$sql = "UPDATE Student
+        SET lastname = 'Talukder', email = 'chad@gmail.com'
+        WHERE id = 3";
+
+if(mysqli_query($conn, $sql)){
+    echo "Update Succesfully";
 }
+ else{
+    echo "Not Update";
+ }*/
+#================ data Update   end===================
+#================ data   Ddelete  start===================
+$sql = "DELETE FROM Student
+        WHERE id=3";
+    if(mysqli_query($conn, $sql)){
+        echo "Delete Succesfully";
+    }
+     else{
+        echo "Not Delete";
+     }    
 
-
-
-
-
-
+#================ data  Ddelete  end===================
 
 mysqli_close($conn);
 ?>
